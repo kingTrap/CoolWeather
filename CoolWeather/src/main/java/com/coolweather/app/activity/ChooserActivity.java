@@ -2,6 +2,8 @@ package com.coolweather.app.activity;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -256,6 +258,24 @@ public class ChooserActivity extends Activity implements AdapterView.OnItemClick
                 break;
 
             case LEVEL_COUNTRY :
+
+                for(int k = 0 ; k < mCountries.size() ; k++){
+
+                    if(mCountries.get(k).getCountryName().equals(name)){
+
+                        SharedPreferences sp = getSharedPreferences("coolweather.xml" , 0);
+                        SharedPreferences.Editor editor = sp.edit();
+                        editor.putString("country_code" , mCountries.get(k).getCountryCode());
+                        editor.putString("country_name" , mCountries.get(k).getCountryName());
+                        editor.putString("weather_code" , null);
+                        editor.commit();
+
+                        Intent mIntent = new Intent(this,WeatherActivity.class);
+                        startActivity(mIntent);
+                        finish();
+                        break;
+                    }
+                }
 
                 break;
         }

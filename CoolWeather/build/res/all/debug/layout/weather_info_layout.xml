@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp"  android:background="#555" >
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_city" android:id="@+id/btn_change" android:textColor="@android:color/white"/>
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:textColor="@android:color/white" android:textSize="24sp"
+                  android:id="@+id/tv_title"
+                  android:layout_centerInParent="true"
+                  android:gravity="center"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refresh" android:id="@+id/btn_refresh" android:textColor="@android:color/white" android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+
+        <TextView  android:id="@+id/tv_publish" android:text="1" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_alignParentRight="true" android:textSize="18sp" android:textColor="@android:color/black" android:gravity="center" android:layout_margin="10dp" />
+
+        <LinearLayout android:id="@+id/view_info" android:layout_centerInParent="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:textColor="@android:color/black" android:textSize="24sp" android:layout_margin="5dp" android:text="1"/>
+            <TextView android:id="@+id/tv_weather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:textColor="@android:color/black" android:textSize="24sp" android:layout_margin="5dp" android:text="1"/>
+            <TextView android:id="@+id/tv_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:textColor="@android:color/black" android:textSize="24sp" android:layout_margin="5dp" android:text="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout><!-- From: file:/home/lovezyh/IdeaProjects/AndroidProjects/CoolWeather/src/main/res/layout/weather_info_layout.xml -->

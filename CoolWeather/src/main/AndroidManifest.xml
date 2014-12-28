@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.coolweather.app.activity.ChooserActivity"
+            android:name="com.coolweather.app.activity.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".activity.ChooserActivity"></activity>
+        <activity android:name=".activity.WeatherActivity"></activity>
     </application>
 
 </manifest>

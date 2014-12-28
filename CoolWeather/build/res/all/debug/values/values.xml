@@ -547,6 +547,8 @@
 
     <string name="action_settings">Settings</string>
     <string name="app_name">AndroidProjects</string>
+    <string name="change_city">切換城市</string>
+    <string name="get_weather_code_failed">获取天气编号失败</string>
     <string name="hello_world">Hello world!</string>
     <string name="load_city_failed">load city failed</string>
     <string name="load_city_success">load city success</string>
@@ -556,6 +558,10 @@
     <string name="load_province_success">load province success</string>
     <string name="progress_loading">loading...</string>
     <string name="province_title">中国</string>
+    <string name="publish_doing">同步中....</string>
+    <string name="publish_failed">同步失敗！</string>
+    <string name="refresh">刷新</string>
+    <string name="weather_range">%1$s~%2$s</string>
     <!-- From: file:/home/lovezyh/IdeaProjects/AndroidProjects/CoolWeather/src/main/res/values/styles.xml -->
     <eat-comment />
 

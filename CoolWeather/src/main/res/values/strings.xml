@@ -13,4 +13,13 @@
     <string name="load_province_failed">load province failed</string>
     <string name="load_city_failed">load city failed</string>
     <string name="load_country_failed">load country failed</string>
+
+    <string name="change_city">切換城市</string>
+    <string name="refresh">刷新</string>
+
+    <string name="publish_doing">同步中....</string>
+    <string name="publish_failed">同步失敗！</string>
+
+    <string name="get_weather_code_failed">获取天气编号失败</string>
+    <string name="weather_range">%1$s~%2$s</string>
 </resources>

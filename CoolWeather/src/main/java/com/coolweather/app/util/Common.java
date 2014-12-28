@@ -15,4 +15,15 @@ public class Common {
 
         return CITY_ROOT_URL + code +".xml";
     }
+
+    public static final String WEATHER_ROOT_URL = "http://www.weather.com.cn/data/cityinfo/";
+
+    public static String generateWeatherUrl(String weatherCode){
+
+        if(weatherCode == null){
+            return null;
+        }
+
+        return WEATHER_ROOT_URL + weatherCode + ".html";
+    }
 }

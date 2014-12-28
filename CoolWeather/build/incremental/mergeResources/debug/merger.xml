@@ -8304,17 +8304,29 @@ true
                 </string>
                 <string name="app_name" >AndroidProjects
                 </string>
+                <string name="load_country_success" >load country success
+                </string>
+                <string name="load_country_failed" >load country failed
+                </string>
+                <string name="weather_range" >%1$s~%2$s
+                </string>
+                <string name="province_title" >中国
+                </string>
+                <string name="change_city" >切換城市
+                </string>
+                <string name="publish_failed" >同步失敗！
+                </string>
+                <string name="refresh" >刷新
+                </string>
+                <string name="get_weather_code_failed" >获取天气编号失败
+                </string>
                 <string name="load_city_failed" >load city failed
                 </string>
                 <string name="progress_loading" >loading...
                 </string>
                 <string name="load_province_failed" >load province failed
                 </string>
-                <string name="load_country_success" >load country success
-                </string>
-                <string name="load_country_failed" >load country failed
-                </string>
-                <string name="province_title" >中国
+                <string name="publish_doing" >同步中....
                 </string>
                 <string name="load_province_success" >load province success
                 </string>
@@ -8348,6 +8360,21 @@ true
                 path="/home/lovezyh/IdeaProjects/AndroidProjects/CoolWeather/src/main/res/layout/choose_item.xml"
                 qualifiers=""
                 type="layout" />
+            <file
+                name="weather_info_layout"
+                path="/home/lovezyh/IdeaProjects/AndroidProjects/CoolWeather/src/main/res/layout/weather_info_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="splash_layout"
+                path="/home/lovezyh/IdeaProjects/AndroidProjects/CoolWeather/src/main/res/layout/splash_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="weather"
+                path="/home/lovezyh/IdeaProjects/AndroidProjects/CoolWeather/src/main/res/drawable-hdpi/weather.jpg"
+                qualifiers="hdpi"
+                type="drawable" />
         </source>
         <source path="/home/lovezyh/IdeaProjects/AndroidProjects/CoolWeather/build/res/rs/debug" />
         <source path="/home/lovezyh/IdeaProjects/AndroidProjects/CoolWeather/build/res/generated/debug" />
