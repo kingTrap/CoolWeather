@@ -23,7 +23,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
     public static final String CREATE_TABLE_CITY = " create table city ( _id integer primary key autoincrement , "
                                                     + "city_name text , "
                                                     + "city_code text , "
-                                                    + "province_id integer)" ;
+                                                    + "province_code text)" ;
 
     /*
     创建县表
@@ -32,7 +32,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
     public static final String CREATE_TABLE_COUNTRY = "create table country (_id integer primary key autoincrement ,"
                                                       + "country_name text , "
                                                       + "country_code text , "
-                                                      + "city_id integer)";
+                                                      + "city_code text)";
 
     public CoolWeatherOpenHelper(Context mContext, String mDBName, Object o, int mDBVersion){
 

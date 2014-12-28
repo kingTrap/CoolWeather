@@ -548,6 +548,14 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">AndroidProjects</string>
     <string name="hello_world">Hello world!</string>
+    <string name="load_city_failed">load city failed</string>
+    <string name="load_city_success">load city success</string>
+    <string name="load_country_failed">load country failed</string>
+    <string name="load_country_success">load country success</string>
+    <string name="load_province_failed">load province failed</string>
+    <string name="load_province_success">load province success</string>
+    <string name="progress_loading">loading...</string>
+    <string name="province_title">中国</string>
     <!-- From: file:/home/lovezyh/IdeaProjects/AndroidProjects/CoolWeather/src/main/res/values/styles.xml -->
     <eat-comment />
 

@@ -84,15 +84,15 @@ public class CoolWeatherDB {
         ContentValues values = new ContentValues();
         values.put("city_name" , c.getCityName());
         values.put("city_code" , c.getCityCode());
-        values.put("province_id" , c.getProvinceId());
+        values.put("province_code" , c.getProvinceCode());
         db.insert("city" , null , values);
     }
 
-    public List<City> getCities(){
+    public List<City> getCities(String provinceCode){
 
         List<City> cities = new ArrayList<City>();
 
-        Cursor cursor = db.query("city" , null ,null,null,null,null,null,null);
+        Cursor cursor = db.query("city" , null ,"province_code=?",new String[]{provinceCode},null,null,null,null);
 
         if(cursor != null){
 
@@ -104,6 +104,7 @@ public class CoolWeatherDB {
                     c.setId(cursor.getInt(cursor.getColumnIndex("_id")));
                     c.setCityName(cursor.getString(cursor.getColumnIndex("city_name")));
                     c.setCityCode(cursor.getString(cursor.getColumnIndex("city_code")));
+                    c.setProvinceCode(cursor.getString(cursor.getColumnIndex("province_code")));
                     cities.add(c);
 
                 }while(cursor.moveToNext());
@@ -123,15 +124,15 @@ public class CoolWeatherDB {
         ContentValues values = new ContentValues();
         values.put("country_name" , c.getCountryName());
         values.put("country_code" , c.getCountryCode());
-        values.put("city_id" ,c.getCityId());
+        values.put("city_code" ,c.getCityCode());
         db.insert("country" , null , values);
     }
 
-    public List<Country> getCountries(){
+    public List<Country> getCountries(String cityCode){
 
         List<Country> countries = new ArrayList<Country>();
 
-        Cursor cursor = db.query("country" , null ,null,null,null,null,null,null);
+        Cursor cursor = db.query("country" , null ,"city_code=?",new String[]{cityCode},null,null,null,null);
 
         if(cursor != null){
 
@@ -143,6 +144,7 @@ public class CoolWeatherDB {
                     c.setId(cursor.getInt(cursor.getColumnIndex("_id")));
                     c.setCountryName(cursor.getString(cursor.getColumnIndex("country_name")));
                     c.setCountryCode(cursor.getString(cursor.getColumnIndex("country_code")));
+                    c.setCityCode(cursor.getString(cursor.getColumnIndex("city_code")));
                     countries.add(c);
 
                 }while(cursor.moveToNext());
